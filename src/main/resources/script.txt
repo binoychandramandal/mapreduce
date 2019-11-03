@@ -1,0 +1,5 @@
+1. Word Count
+==============
+hadoop jar mapreduce-1.0-SNAPSHOT.jar word_count.WordCountDriver /data/word-count.txt /output/word-count1
+
+2.

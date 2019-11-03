@@ -16,8 +16,6 @@ public class WordCountDriver {
         Job job=Job.getInstance(conf,"WordCount");
         job.setJarByClass(WordCountDriver.class);
         job.setMapperClass(WordCountMapper.class);
-        //job.setMapOutputKeyClass(Text.class);
-        //job.setMapOutputValueClass(IntWritable.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
         job.setReducerClass(WordCountReducer.class);
