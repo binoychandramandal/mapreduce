@@ -2,4 +2,110 @@
 ==============
 hadoop jar mapreduce-1.0-SNAPSHOT.jar word_count.WordCountDriver /data/word-count.txt /output/word-count1
 
-2.
+2. Combiner
+==============
+hadoop jar mapreduce-1.0-SNAPSHOT.jar combiner.WordCountWithCOMBINER /data/word-count.txt /output/word-count3
+
+3. Sum Of Even Odd
+===================
+hadoop jar mapreduce-1.0-SNAPSHOT.jar sum_even_odd.EvenOddDriver /data/evenodd.txt /output/evenodd
+
+4. Facebook ads
+===================
+hadoop jar mapreduce-1.0-SNAPSHOT.jar facebook.FacebookDriver /data/fb.txt /output/fb
+
+5. Custom Writable
+===================
+hadoop jar mapreduce-1.0-SNAPSHOT.jar facebook.FacebookDriver /data/word-count.txt /output/custom-writable
+
+6. Fraud Detection
+===================
+hadoop jar mapreduce-1.0-SNAPSHOT.jar fraud_detection.FraudDetectionDriver /data/fraud.txt /output/fraud
+
+7. Distributated cache
+=======================
+hadoop jar mapreduce-1.0-SNAPSHOT.jar distributated_cache.SalaryInc /data/emp.txt /output/cache /data/designation.txt
+
+8. Multiple Inputs
+=======================
+hadoop jar mapreduce-1.0-SNAPSHOT.jar multiple_input.MI_driver /data/word1.txt  /data/word2.txt /output/multiple_input
+
+9. Multiple Outputs
+=======================
+hadoop jar mapreduce-1.0-SNAPSHOT.jar multiple_output.MultiOutputDriver /data/mo.txt /output/multiple_output
+
+10. Reduce Side Inner Join
+==========================
+hadoop jar mapreduce-1.0-SNAPSHOT.jar reduce_inner_join.Join_driver /data/mo.txt /data/mo.txt /output/join
+
+11. Reduce Side outer Join
+==========================
+hadoop jar mapreduce-1.0-SNAPSHOT.jar reduce_inner_join.OuterJoin_Driver /data/employee.txt /data/dept.txt /output/outer-join
+
+12. Map Side  Join
+==========================
+hadoop jar mapreduce-1.0-SNAPSHOT.jar map_side_join.MapJoin /data/sales.txt /data/store.txt /data/product.txt /output/map-join
+
+13. Custom counter
+==========================
+hadoop jar mapreduce-1.0-SNAPSHOT.jar custom_counter.CountersDriver /data/counter.txt /output/counter
+
+14. Custom Input Format for xml
+===============================
+hadoop jar mapreduce-1.0-SNAPSHOT.jar custom_input_format_xml_reader.XML /data/xml.txt /output/input-format
+
+15. Custom Input Format for xml 2
+=================================
+hadoop jar mapreduce-1.0-SNAPSHOT.jar custom_input_format_xml_reader2.XML /data/xml2.txt /output/input-format2
+
+16. Sequence File
+=================================
+hadoop jar mapreduce-1.0-SNAPSHOT.jar sequence_file.SequenceFileReader /data/xml2.txt /output/input-format2
+
+
+17. Chain Mapper
+=================================
+hadoop jar mapreduce-1.0-SNAPSHOT.jar chain_mapper.ChainMapMain /data/xml2.txt /output/chain-mapper
+
+
+
+18. Chain Job
+=================================
+hadoop jar mapreduce-1.0-SNAPSHOT.jar chain_job.ChainMapMain /data/xml2.txt /output/chain-job
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
