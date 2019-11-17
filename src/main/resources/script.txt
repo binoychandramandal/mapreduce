@@ -16,7 +16,7 @@ hadoop jar mapreduce-1.0-SNAPSHOT.jar facebook.FacebookDriver /data/fb.txt /outp
 
 5. Custom Writable
 ===================
-hadoop jar mapreduce-1.0-SNAPSHOT.jar facebook.FacebookDriver /data/word-count.txt /output/custom-writable
+hadoop jar mapreduce-1.0-SNAPSHOT.jar custom_writable.WordCountDriver /data/word-count.txt /output/custom-writable
 
 6. Fraud Detection
 ===================
