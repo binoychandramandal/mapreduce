@@ -67,11 +67,31 @@ hadoop jar mapreduce-1.0-SNAPSHOT.jar sequence_file.SequenceFileReader /data/xml
 =================================
 hadoop jar mapreduce-1.0-SNAPSHOT.jar chain_mapper.ChainMapMain /data/xml2.txt /output/chain-mapper
 
-
-
 18. Chain Job
 =================================
 hadoop jar mapreduce-1.0-SNAPSHOT.jar chain_job.ChainMapMain /data/xml2.txt /output/chain-job
+
+19. Bank Loyal Customer
+=================================
+hadoop jar mapreduce-1.0-SNAPSHOT.jar chain_job.ChainMapMain /data/xml2.txt /output/chain-job
+
+20. Flight
+=================================
+hadoop jar mapreduce-1.0-SNAPSHOT.jar chain_job.ChainMapMain /data/xml2.txt /output/chain-job
+
+
+21. Bank Loyal Customer
+=================================
+hadoop jar mapreduce-1.0-SNAPSHOT.jar chain_job.ChainMapMain /data/xml2.txt /output/chain-job
+
+
+
+
+
+
+
+
+
 
 
 
